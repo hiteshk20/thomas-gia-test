@@ -1,0 +1,19 @@
+{
+  "name": "Cognitra · Elite Cognitive Assessment",
+  "short_name": "Cognitra",
+  "description": "GIA-style cognitive assessment SaaS: five timed tasks, twenty minutes, full analytics report.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#cdd2f5",
+  "theme_color": "#1e3a8a",
+  "icons": [
+    {
+      "src": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect width='512' height='512' rx='96' fill='%231e3a8a'/><text x='50%25' y='62%25' text-anchor='middle' font-family='Inter,Arial' font-weight='800' font-size='320' fill='white'>C</text></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

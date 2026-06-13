@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<meta name="theme-color" content="#cdd2f5" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#10142a" media="(prefers-color-scheme: dark)" />
+<meta name="description" content="Cognitra — elite, minimalistic SaaS cognitive assessment inspired by the Thomas GIA. Five timed tasks, twenty minutes, full analytics report." />
+<title>Cognitra · Elite Cognitive Assessment</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231e3a8a'/%3E%3Ctext x='50%25' y='58%25' text-anchor='middle' font-family='Inter,Arial' font-weight='800' font-size='34' fill='%23ffffff'%3EC%3C/text%3E%3C/svg%3E" />
+<link rel="manifest" href="manifest.webmanifest" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body data-theme="light">
+
+<!-- ===================== LANDING ===================== -->
+<section id="screen-landing" class="screen active">
+  <header class="nav">
+    <div class="brand">
+      <span class="logo">C</span>
+      <span class="brand-name">Cognitra</span>
+      <span class="pro-tag">PRO</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#tests">Assessment</a>
+      <a href="#how">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <button class="icon-btn" id="themeToggle" title="Toggle theme" aria-label="Toggle dark mode">☾</button>
+      <button class="btn ghost" data-action="goto" data-target="screen-admin" title="Admin dashboard">Admin</button>
+      <button class="btn primary" data-action="goto" data-target="screen-intake">Take assessment</button>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">General Intelligence Assessment · v2</span>
+        <h1>Measure how fast your mind learns.</h1>
+        <p class="lead">A precise, validated cognitive battery — five tasks, twenty minutes, one definitive score of trainability and mental agility. With elite-grade analytics on every response.</p>
+        <div class="cta-row">
+          <button class="btn primary lg" data-action="goto" data-target="screen-intake">Start assessment →</button>
+          <button class="btn ghost lg" data-action="goto" data-target="screen-sample">Try a sample question</button>
+        </div>
+        <ul class="trust">
+          <li>● Independently validated format</li>
+          <li>● Per-item response analytics</li>
+          <li>● Anti-distraction monitoring</li>
+          <li>● Installable PWA</li>
+        </ul>
+      </div>
+      <aside class="hero-card" aria-hidden="true">
+        <div class="card-head">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="card-title">Sample · Reasoning</span>
+        </div>
+        <div class="card-body">
+          <div class="stim white-card"><p class="stim-text">Bob is not as happy as Paul.</p></div>
+          <div class="answer-grid two">
+            <button class="ans-box">Paul</button>
+            <button class="ans-box">Bob</button>
+          </div>
+          <p class="hint">Click the screen when ready to continue</p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <section id="tests" class="strip">
+    <div class="strip-inner">
+      <div class="metric"><h3>5</h3><p>Cognitive tasks</p></div>
+      <div class="metric"><h3>20<small>min</small></h3><p>Total testing time</p></div>
+      <div class="metric"><h3>8</h3><p>Practice items per task</p></div>
+      <div class="metric"><h3>∞</h3><p>Insights into trainability</p></div>
+    </div>
+  </section>
+
+  <section id="how" class="features">
+    <h2>The five tasks</h2>
+    <div class="feature-grid">
+      <article class="feature"><div class="ficon">⟶</div><h4>Perceptual Speed</h4><p>3 minutes · Identify matching letter pairs at high tempo.</p></article>
+      <article class="feature"><div class="ficon">≡</div><h4>Reasoning</h4><p>4 minutes · Read a short statement, answer a comparison.</p></article>
+      <article class="feature"><div class="ficon">◧</div><h4>Working Memory</h4><p>4 minutes · Spot the odd word out from a triplet.</p></article>
+      <article class="feature"><div class="ficon">∑</div><h4>Number Speed & Accuracy</h4><p>4 minutes · Find the number furthest from the rest.</p></article>
+      <article class="feature"><div class="ficon">◇</div><h4>Spatial Visualisation</h4><p>5 minutes · Count matched rotated shapes vs. mirror images.</p></article>
+      <article class="feature accent"><div class="ficon">★</div><h4>Composite GIA score</h4><p>Single weighted index of trainability — with percentile, radar chart, and per-item timing analytics.</p></article>
+    </div>
+  </section>
+
+  <section id="pricing" class="pricing">
+    <h2>Simple, elite pricing</h2>
+    <div class="price-grid">
+      <div class="price-card"><h3>Individual</h3><p class="price">$0</p><ul><li>Full 20-minute assessment</li><li>Personal results report</li><li>PDF export</li></ul><button class="btn primary" data-action="goto" data-target="screen-intake">Begin</button></div>
+      <div class="price-card featured"><span class="badge">Most chosen</span><h3>Team</h3><p class="price">$29<small>/seat</small></p><ul><li>Everything in Individual</li><li>Hiring benchmark library</li><li>Admin dashboard & exports</li></ul><button class="btn primary" data-action="goto" data-target="screen-intake">Start trial</button></div>
+      <div class="price-card"><h3>Enterprise</h3><p class="price">Custom</p><ul><li>SSO & audit logs</li><li>Custom norms & branding</li><li>Dedicated success lead</li></ul><button class="btn ghost" data-action="goto" data-target="screen-intake">Talk to us</button></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© Cognitra · Elite GIA-style cognitive assessment. Educational replica, not affiliated with Thomas International.</p>
+  </footer>
+</section>
+
+<!-- ===================== SAMPLE QUESTION ===================== -->
+<section id="screen-sample" class="screen test-frame">
+  <div class="test-shell">
+    <div class="stim white-card"><p class="stim-text">Bob is not as happy as Paul.</p></div>
+    <div class="answer-grid two">
+      <button class="ans-box big" data-action="goto" data-target="screen-landing">Paul</button>
+      <button class="ans-box big" data-action="goto" data-target="screen-landing">Bob</button>
+    </div>
+    <p class="hint">Click an answer to return</p>
+  </div>
+</section>
+
+<!-- ===================== INTAKE ===================== -->
+<section id="screen-intake" class="screen">
+  <div class="container narrow">
+    <div class="panel">
+      <span class="eyebrow">Candidate details</span>
+      <h2>Let's get you set up.</h2>
+      <p>Your details appear on your private report. Nothing is sent anywhere — everything is stored locally in your browser.</p>
+      <form id="intakeForm" class="form">
+        <label><span>Full name</span><input required name="name" autocomplete="name" placeholder="Ada Lovelace" /></label>
+        <label><span>Email</span><input required type="email" name="email" autocomplete="email" placeholder="ada@cognitra.app" /></label>
+        <label><span>Role you are applying for <small>(optional)</small></span><input name="role" placeholder="Senior Product Engineer" /></label>
+        <div class="actions">
+          <button type="button" class="btn ghost" data-action="goto" data-target="screen-landing">← Back</button>
+          <button type="submit" class="btn primary lg">Continue →</button>
+        </div>
+      </form>
+      <div class="resume-banner" id="resumeBanner" hidden>
+        <p>⏱ <b>Unfinished attempt detected.</b> You can resume where you left off.</p>
+        <div class="resume-actions">
+          <button class="btn ghost" id="discardResume">Discard</button>
+          <button class="btn primary" id="doResume">Resume attempt</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GUIDELINES ===================== -->
+<section id="screen-guidelines" class="screen">
+  <div class="container narrow">
+    <div class="panel">
+      <h2 class="panel-title">Before you continue, we would be very grateful if you could read the following guidelines:</h2>
+      <p>Both <strong>speed</strong> and <strong>accuracy</strong> are important when completing each task so make sure you work as quickly as you can and as accurately as you can without any disruptions.</p>
+      <p>Ensure that you are working on your own, in a quiet environment free from interruption where you will be able to concentrate and focus for at least <strong>40 minutes</strong>.</p>
+      <h3>Independently validated normative ability tests consisting of:</h3>
+      <ul class="task-list">
+        <li><span>Perceptual Speed</span><b>3 minutes</b></li>
+        <li><span>Reasoning</span><b>4 minutes</b></li>
+        <li><span>Working Memory</span><b>4 minutes</b></li>
+        <li><span>Number Speed and Accuracy</span><b>4 minutes</b></li>
+        <li><span>Spatial Visualisation</span><b>5 minutes</b></li>
+      </ul>
+      <p class="total"><strong>Total testing time:</strong> 20 minutes</p>
+
+      <div class="info-box">
+        <h4>Focus mode</h4>
+        <p>For an authentic result, we recommend taking the assessment in fullscreen. We log any tab switches or focus loss as integrity events on your report.</p>
+        <label class="check"><input type="checkbox" id="fullscreenOpt" checked /><span>Use fullscreen during the assessment</span></label>
+      </div>
+
+      <label class="check">
+        <input type="checkbox" id="consent" />
+        <span>I have read the guidelines and I am ready to begin in a distraction-free environment.</span>
+      </label>
+
+      <div class="actions">
+        <button class="btn ghost" data-action="goto" data-target="screen-intake">← Back</button>
+        <button id="beginAll" class="btn primary lg" disabled>Begin assessment →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TASK INTRO ===================== -->
+<section id="screen-task-intro" class="screen">
+  <div class="container narrow">
+    <div class="panel">
+      <span class="eyebrow" id="ti-eyebrow">Task 1 of 5</span>
+      <h2 id="ti-title">Reasoning</h2>
+      <p id="ti-desc"></p>
+      <div class="example-block" id="ti-example"></div>
+      <p class="hint">You'll have <b id="ti-practice-count">8</b> practice items, then the timed task (<b id="ti-time"></b>).</p>
+      <div class="kbd-hint">Tip: press <kbd>1</kbd>–<kbd>5</kbd> on your keyboard to answer faster.</div>
+      <div class="actions">
+        <button class="btn primary lg" id="ti-start">Start practice →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== RUNNER ===================== -->
+<section id="screen-runner" class="screen test-frame">
+  <div class="runner-top">
+    <div class="runner-meta">
+      <span class="pill" id="rn-task">Task</span>
+      <span class="pill ghost-pill" id="rn-mode">Practice</span>
+    </div>
+    <div class="runner-prog">
+      <div class="bar"><div class="bar-fill" id="rn-bar"></div></div>
+      <span id="rn-counter">0 / 8</span>
+      <span class="timer" id="rn-timer">--:--</span>
+      <button class="icon-btn" id="quitBtn" title="Quit assessment" aria-label="Quit">✕</button>
+    </div>
+  </div>
+  <div class="test-shell" id="rn-stage"><!-- injected --></div>
+  <p class="hint" id="rn-hint">Click the screen when ready to continue</p>
+  <div class="feedback" id="rn-fb" role="status" aria-live="polite"></div>
+  <div class="integrity-toast" id="integrityToast" role="status" aria-live="polite"></div>
+</section>
+
+<!-- ===================== BETWEEN ===================== -->
+<section id="screen-between" class="screen">
+  <div class="container narrow">
+    <div class="panel center">
+      <h2>Well done.</h2>
+      <p id="bt-msg">You have finished this task.</p>
+      <div class="actions center-actions">
+        <button class="btn primary lg" id="bt-next">Continue to next task →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== RESULTS ===================== -->
+<section id="screen-results" class="screen">
+  <div class="container">
+
+    <div class="report-header">
+      <div>
+        <span class="eyebrow">Cognitra · GIA assessment report</span>
+        <h2 id="reportName">Candidate report</h2>
+        <p class="muted" id="reportMeta"></p>
+      </div>
+      <div class="report-actions">
+        <button class="btn ghost" id="printBtn">Print / PDF</button>
+        <button class="btn ghost" id="jsonBtn">Download JSON</button>
+        <button class="btn ghost" id="csvBtn">Download CSV</button>
+        <button class="btn primary" data-action="goto" data-target="screen-landing">Home</button>
+      </div>
+    </div>
+
+    <div class="results-grid">
+      <div class="panel results-hero">
+        <span class="eyebrow">Composite GIA score</span>
+        <div class="score-ring">
+          <svg viewBox="0 0 120 120" aria-hidden="true">
+            <circle cx="60" cy="60" r="52" class="ring-bg"/>
+            <circle cx="60" cy="60" r="52" class="ring-fg" id="ringFg"/>
+          </svg>
+          <div class="score-val"><b id="scoreVal">0</b><small>/ 100</small></div>
+        </div>
+        <p class="percentile">Percentile · <b id="percentileVal">—</b></p>
+        <p id="scoreBlurb" class="lead"></p>
+      </div>
+
+      <div class="panel">
+        <h3>Subscale radar</h3>
+        <div class="radar-wrap"><svg viewBox="0 0 320 280" id="radarSvg" aria-hidden="true"></svg></div>
+      </div>
+
+      <div class="panel panel-wide">
+        <h3>Breakdown</h3>
+        <div id="breakdown" class="breakdown"></div>
+      </div>
+
+      <div class="panel panel-wide">
+        <h3>Response-time analytics</h3>
+        <div id="rtCharts" class="rt-grid"></div>
+      </div>
+
+      <div class="panel panel-wide">
+        <h3>Assessment integrity</h3>
+        <div id="integrityList" class="integrity-list"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ADMIN DASHBOARD ===================== -->
+<section id="screen-admin" class="screen">
+  <div class="container">
+    <div class="report-header">
+      <div>
+        <span class="eyebrow">Admin dashboard</span>
+        <h2>Past attempts</h2>
+        <p class="muted">All attempts are stored locally in this browser only.</p>
+      </div>
+      <div class="report-actions">
+        <button class="btn ghost" id="exportAllCsv">Export all (CSV)</button>
+        <button class="btn ghost" id="clearAll">Clear history</button>
+        <button class="btn primary" data-action="goto" data-target="screen-landing">Home</button>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="admin-stats" id="adminStats"></div>
+      <table class="attempts">
+        <thead><tr><th>Date</th><th>Name</th><th>Email</th><th>Role</th><th>Composite</th><th>Percentile</th><th>Integrity</th><th></th></tr></thead>
+        <tbody id="attemptsTbody"></tbody>
+      </table>
+      <p id="emptyAttempts" class="muted">No attempts yet. Take the assessment to populate this dashboard.</p>
+    </div>
+  </div>
+</section>
+
+<script src="app.js"></script>
+<script>
+  // Register service worker for PWA / offline support
+  if('serviceWorker' in navigator){
+    window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(()=>{}));
+  }
+</script>
+</body>
+</html>
